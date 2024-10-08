@@ -1,0 +1,80 @@
+body {
+    background-color: hsl(47, 88%, 63%);
+    font-family: 'Figtree', sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: hsl(0, 0%, 100%);
+    max-width: 375px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 8px 8px 0px 0px hsl(0, 0%, 7%);
+    padding: 10px;
+}
+
+.card-image {
+    width: calc(100% - 20px); 
+    height: auto;
+    margin: 10px;
+    border-radius:10px ; 
+}
+
+.card-content {
+    padding: 24px;
+}
+
+.tag {
+    background-color: hsl(47, 88%, 63%);
+    color: hsl(0, 0%, 7%);
+    font-weight: 800;
+    padding: 4px 12px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.publish-date {
+    color: hsl(0, 0%, 42%);
+    margin-bottom: 12px;
+}
+
+.title {
+    color: hsl(0, 0%, 7%);
+    font-weight: 800;
+    font-size: 24px;
+    margin-bottom: 12px;
+}
+
+.description {
+    color: hsl(0, 0%, 42%);
+    margin-bottom: 24px;
+}
+
+.author {
+    display: flex;
+    align-items: center;
+}
+
+.author-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin-right: 12px;
+}
+
+.author-name {
+    color: hsl(0, 0%, 7%);
+    font-weight: 800;
+}
+
+@media (min-width: 1440px) {
+    .card {
+        max-width: 400px;
+    }
+}
